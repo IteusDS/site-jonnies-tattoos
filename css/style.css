@@ -1,0 +1,839 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 3s;
+  animation: fadein 5s linear;
+  animation: fadein 5s linear;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2 ease-in;
+  transition: 0.2 ease-in;
+}
+::-webkit-scrollbar{
+  width: 4px;
+  color:var(--maincolor3);
+  transition: all .4s ease;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--maincolor3); 
+  border-radius: 4px;
+  width: 4px;
+  transition: all .4s ease;
+}
+::-webkit-scrollbar-track {
+  background: #101010; 
+  border-radius: 4px;
+  width: 4px;
+}
+
+:root{
+--maincolor: #000;
+--maincolor2:#707070;
+--maincolor3: #FED531;
+--textcolor1: #707070;
+--textcolor2: #fff;
+--textcolor3: #252525;
+}
+a:link, a:visited {
+	text-decoration: none
+  }
+  a{
+    color: var(--textcolor2);
+  }
+  
+a:hover {
+ 
+	color: var(--textcolor1)
+	}
+a:active {
+	text-decoration: none
+	}
+.container{
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+
+
+}
+.logo-01 a{
+  font-size: 21px;
+}
+
+/* Parte do menu*/
+.nav-bar-title{
+  background-color: black;
+  color: #ffffff;
+  padding: 20px 0;
+
+}
+
+ul li{
+  display: inline-flex;
+  margin: 0 20px;
+  text-transform: uppercase;
+
+
+}
+
+.align-itens{
+  display: flex;
+justify-content: space-between;
+align-self: center;
+  
+}
+
+
+/* Intro */
+.bg-intro{
+background: url("/img/chrisbg.jpg") no-repeat center center; ;
+
+background-repeat: no-repeat;
+background-size: cover;
+ padding: 290px 0;
+
+}
+
+.image-logo img{
+  filter: grayscale(100%);
+}
+.text-intro{
+  text-align: center;
+  margin: 0 auto;
+}
+.text-intro h1{
+  font-size: 134px;
+  text-transform: uppercase;
+  opacity: 1;
+ 
+  
+}
+.made-in{
+  writing-mode: vertical-rl;
+  position: fixed;
+  z-index: 10;
+  background-color: #000;
+  padding: 40px 10px;
+  left: 0;
+  top: 40%;
+  text-transform: uppercase;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.made-in-out{
+  writing-mode: horizontal-tb;
+  position: fixed;
+  z-index: 10;
+
+  background-color: var(--maincolor3);
+  padding: 20px 10px;
+
+  right: 0;
+  top: 40%;
+  text-transform: uppercase;
+  border-radius: 20px 0px 0 20px;
+}
+
+.made-in-out img{
+  width: 25px;
+  margin-right: 15px;
+  display: block;
+
+  margin: 10px auto;
+}
+.text-intro h3{
+  font-style: italic;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.made-in-out img:hover{
+  opacity: 0.5;
+}
+
+.text-intro h1::after {
+	content: '';
+	display: block;
+	width: 5em;
+	height: 10px;
+	background: #000;
+    margin: 20px auto;
+    z-index: 10;
+  
+}
+
+
+
+/* Projetos */
+
+
+.fundo-1{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/1.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+.fundo-2{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/2.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+.fundo-3{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/3.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+.fundo-4{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/4.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+  .img-conj h2{
+      font-size: 10px;
+  }
+  
+  .frente{
+    opacity:0;
+    width:100%;
+    height:100%;
+    background:var(--maincolor);
+    color:#fff;
+    transition: all .2s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    transform: scale(0.9);
+    font-family:verdana;
+    text-align: center;
+  
+  }
+  .svg-img{
+    width: 1.125em;
+}
+
+.frente:hover{
+  opacity:1;
+  transform: scale(1);
+}
+
+.novidades-fundo{
+ margin: 300px auto;
+ max-width: 960px;
+
+}
+.novidades-fundo  h2{
+  font-size: 60px;
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+.novidades-fundo h2::after {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 20px;
+	background: var(--textcolor3);
+    margin: 10px 0;
+    z-index: 10;
+  
+}
+.text-novidades{
+  text-align: left;
+
+}
+
+
+.coach01{
+  background-color:var(--maincolor3);
+  width: 100%;
+ padding: 300px 0;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  color: var(--textcolor3);
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  from {background-color: var(--maincolor3);
+  color: var(--textcolor3);}
+  to {background-color: var(--textcolor3);
+  color: var(--maincolor3);}
+}
+
+h4::after {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 4px;
+	background: var(--textcolor2);
+    margin: 10px auto;
+    z-index: 10;
+}
+
+/*next section -  quizzer */
+
+
+.color-001{
+  color: var(--textcolor1);
+}
+
+
+
+.fundo-5{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/1.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+.fundo-6{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/2.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+.fundo-7{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/3.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+.fundo-8{
+  background:#e3e3e3;
+  width: 250px;
+  height:  220px;;
+  padding:5px;
+  background-image:url("/img/4.png");
+  background-position:center;
+  background-size:cover;
+  transition: all 1s;
+  }
+
+
+  /* NEXT SESSION - ABOUT US */
+  .about-us h2{
+    font-size: 60px;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+  }
+  .about-us{
+    margin-top: 100px;
+  }
+
+  .about-us h2::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 20px;
+    background: var(--textcolor3);
+      margin: 10px auto;
+      z-index: 10;
+    
+  }
+  .image-logo{
+   width: 20px;
+  }
+  .text-logo{
+    display: block;
+    text-align: right;
+    max-width: 50%;
+    margin: 0 5%;
+    font-size: 21px;
+    flex: 1;
+  }
+  .image-logo img{
+    width: 350px;
+    border: 3px solid #000;
+    flex: 3;
+    margin: 30px;
+  }
+
+  .footer-container{
+  width: 100%;
+  background-color:var(--textcolor3);
+  height: 300px;
+  color: var(--textcolor1);
+  }
+  .cont-yellow{
+    background-color:var(--maincolor3);
+
+  }
+  .new-project{
+    padding-top: 2px;
+   
+  }
+  .fundo-10{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/2.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+  
+  .fundo-11{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/3.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+  
+  .fundo-12{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/4.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+    h1 {
+   font-size: 30px;;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: solid #000 ; /* The typwriter cursor */
+      /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  
+      animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #000 }
+    }
+
+    
+  .fundo-13{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/5.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+  .fundo-14{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/6.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+  
+  .fundo-15{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/7.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+  
+  .fundo-16{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/8.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+  
+  .fundo-17{
+    background:#e3e3e3;
+    width: 250px;
+    height:  220px;;
+    padding:5px;
+    background-image:url("/img/port-01/9.png");
+    background-position:center;
+    background-size:cover;
+    transition: all 1s;
+    }
+    /* footer */
+
+    .contato-container p{
+font-size: 21px;
+
+    }
+    .contato-container{
+margin: 60px 0;
+
+    }
+    
+    .contato-container h3{
+      text-transform: uppercase;
+      color: var(--maincolor3);
+    }
+    
+    .contato-container h3::after {
+      content: '';
+      display: block;
+      width: 2em;
+      height: 10px;
+      background: var(--maincolor3);
+        margin: 10px 0;
+color: var(--maincolor3);
+        z-index: 10;
+      
+    }
+    
+    
+    .contato-container h3{
+      font-size: 25px;
+    }
+    .redes-sociais p{
+      font-size: 21px;
+      
+          }
+
+    .redes-sociais{
+      margin: 60px 0;
+      text-transform: uppercase;
+
+
+
+          }
+
+
+          .redes-sociais h3::after {
+            content: '';
+            display: block;
+            width: 2em;
+            height: 10px;
+            background: var(--maincolor3);
+              margin: 10px 0;
+              z-index: 10;
+            
+          }
+          .redes-sociais h3{
+            font-size: 25px;
+            color: var(--maincolor3);
+          }
+      
+          .flex-teste{
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .fundo-18{
+            background:#e3e3e3;
+            width: 250px;
+            height:  500px;;
+            padding:5px;
+            background-image:url("/img/port-02/4.png");
+            background-position:center;
+            background-size:cover;
+            transition: all 1s;
+            }
+          
+          .fundo-19{
+            background:#e3e3e3;
+            width: 250px;
+            height:  500px;;
+            padding:5px;
+            background-image:url("/img/port-02/1.png");
+            background-position:center;
+            background-size:cover;
+            transition: all 1s;
+            }
+          
+          .fundo-20{
+            background:#e3e3e3;
+            width: 250px;
+            height:  500px;;
+            padding:5px;
+            background-image:url("/img/port-02/2.png");
+            background-position:center;
+            background-size:cover;
+            transition: all 1s;
+            }
+          
+          .fundo-21{
+            background:#e3e3e3;
+            width: 250px;
+            height:  500px;;
+            padding:5px;
+            background-image:url("/img/port-02/3.png");
+            background-position:center;
+            background-size:cover;
+            transition: all 1s;
+            }
+            .footer-02{
+              background-color: #000;
+              padding: 10px;
+              margin: 0 auto;
+              bottom: 0;
+              font-size: 14px;
+              text-transform: uppercase;
+              font-weight: 700;
+        
+            }
+
+/* Breakpoint Mobile */
+            @media (max-width:600px){
+              .container{
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column;
+                max-width: 300px;
+               
+              } 
+              html{
+                margin: 0px;
+                padding: 0px;
+              }
+      
+              .image-logo img{
+             margin: 20px auto ;
+             text-align: center;
+             display: inline-block;
+        
+   
+              }
+              .text-novidades h2::after{
+                margin: 15px auto;
+              }
+              .redes-sociais h3::after{
+                margin: 15px auto;
+              }
+              .contato-container h3::after{
+                margin: 15px auto;
+              }
+              .text-novidades h2::after{
+                margin: 10px auto;
+              }
+              .text-novidades{
+                text-align: center;
+              }
+              .text-logo, .image-logo{
+                max-width: 100%;
+              }
+              .text-logo h2{
+                font-size: 5vh;
+                text-align: center;
+              }
+              .logo-01{
+                text-align: center;
+                margin: 0 auto;
+              }
+               .text-intro h1{
+                 font-size: 6vh;
+               }
+              ul {
+                display: flex;
+                margin: 0 auto;
+                padding: 0;
+                padding-inline-start: 0px;
+              }
+              header{
+                margin: 0 ;
+                padding: 0px;
+              }
+
+              .align-itens{
+                padding: 0px;
+                margin: 0px;            
+                text-align: center;
+                justify-content: center;
+              }
+              hr{
+                background-color: transparent;
+                border: transparent;
+                color: transparent;
+              }
+              .nav-bar-title{
+                margin: 0 auto;
+              
+                text-align: left;
+                padding: 0px;
+              }
+              ul li{
+                margin: 0 auto;
+                padding: 5px;
+                max-width: 80%;
+              }
+ul{
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+justify-content: center;
+  background-color: var(--maincolor);
+  font-size: 2vh;
+  z-index: 10;
+}
+          
+        
+              }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+              
+/* Breakpoint Mobile */
+            @media (max-width:1100px){
+              .container{
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column;
+                max-width: 300px;
+                text-align: center;
+                flex-wrap: wrap;
+              }
+      
+              .image-logo img{
+             margin: 20px auto ;
+             text-align: center;
+             display: inline-block;
+        
+   
+              }
+              hr{
+                background-color: transparent;
+                border: transparent;
+                color: transparent;
+              }
+              .text-novidades h2::after{
+                margin: 15px auto;
+              }
+              
+              .text-novidades h2::after{
+                margin: 10px auto;
+              }
+              .text-novidades{
+                text-align: center;
+
+              }
+              .text-logo, .image-logo{
+                max-width: 100%;
+              }
+              .redes-sociais h3::after{
+                margin: 15px auto;
+              }
+              .contato-container h3::after{
+                margin: 15px auto;
+              }
+              .text-logo h2{
+                font-size: 5vh;
+                text-align: center;
+              }
+              .logo-01{
+                text-align: center;
+                margin: 0 auto;
+              }
+               .text-intro h1{
+                 font-size: 6vh;
+               }
+              ul {
+                display: flex;
+                margin: 0 auto;
+                padding: 0;
+                padding-inline-start: 0px;
+              }
+              header{
+                margin: 0 ;
+                padding: 0px;
+              }
+              .align-itens{
+                padding: 0px;
+                margin: 0px auto;            
+                text-align: center;
+              }
+              .nav-bar-title{
+                margin: 0 auto;
+              
+                text-align: center;
+                padding: 0px;
+              }
+              ul li{
+                margin: 10px auto;
+                padding: 5px;
+              }
+          
+              
+              }
+            
+
+
+              

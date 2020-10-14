@@ -683,9 +683,13 @@ color: var(--maincolor3);
                 max-width: 300px;
                
               } 
+              .text-logo{
+                text-align: center;
+              }
               html{
                 margin: 0px;
                 padding: 0px;
+                text-align: center;
               }
       
               .image-logo img{
@@ -769,6 +773,11 @@ justify-content: center;
   z-index: 10;
 }
 
+.footer-redes2 img{
+  text-justify: center;
+  margin: 0 auto;
+  padding: 10px;
+}
 .text-intro p{
   font-size: 8vh}
           

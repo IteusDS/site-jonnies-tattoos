@@ -692,10 +692,15 @@ color: var(--maincolor3);
                 text-align: center;
               }
       
+              .image-logo{
+                padding: 0;
+                margin: 0;
+              }
               .image-logo img{
              margin: 20px auto ;
              text-align: center;
              display: inline-block;
+             width: 35vh;
         
    
               }

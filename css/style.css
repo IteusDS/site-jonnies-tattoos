@@ -694,7 +694,9 @@ color: var(--maincolor3);
       
               .image-logo{
                 padding: 0;
-                margin: 0;
+            text-align: center;
+      
+              
               }
               .image-logo img{
              margin: 20px auto ;

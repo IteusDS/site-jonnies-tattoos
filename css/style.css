@@ -699,10 +699,11 @@ color: var(--maincolor3);
               
               }
               .image-logo img{
-             margin: 20px auto ;
+             margin: 0 auto ;
              text-align: center;
              display: inline-block;
-             width: 35vh;
+             width: 2vh;
+             opacity: 0;
         
    
               }
